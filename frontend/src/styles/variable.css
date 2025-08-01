@@ -1,0 +1,11 @@
+:root {
+    --color-lime: #C2D72D;
+    --color-navy: #003865;
+    --color-sky: #67C8FF;
+    --color-bg: #ffffff;
+    --color-text: #1f2d3a;
+    --radius: 8px;
+    --transition: 0.3s ease;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
