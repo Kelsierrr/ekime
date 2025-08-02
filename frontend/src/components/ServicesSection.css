@@ -1,0 +1,40 @@
+.services-section {
+    padding: 4rem 0;
+  }
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    color: var(--color-navy);
+  }
+  .section-sub {
+    margin-bottom: 1.75rem;
+    color: #555;
+  }
+  .cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .service-card {
+    flex: 1 1 280px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  }
+  .service-card h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .service-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #444;
+  }
+  
