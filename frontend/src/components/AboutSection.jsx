@@ -22,8 +22,12 @@ export default function AboutSection() {
           </a>
         </div>
         <div className="about-visual">
-          {/* Placeholder: could be a team photo, logo mashup, or illustration */}
-          <div className="visual-box">[About Visual]</div>
+          <img
+            src="/about-image.jpg"
+            alt="Team or creative digital work representation"
+            className="about-image"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>

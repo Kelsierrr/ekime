@@ -19,8 +19,12 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-visual">
-          {/* Placeholder: you can replace with an illustration or graphic */}
-          <div className="visual-box">[Visual Graphic]</div>
+          <img
+            src="/hero-image.jpg"
+            alt="Illustration of digital growth strategy"
+            className="hero-image"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>

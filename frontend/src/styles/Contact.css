@@ -1,0 +1,75 @@
+/* src/styles/Contact.css */
+:root {
+    --navy: #003865;
+    --lime: #C2D72D;
+    --text: #1f2d3a;
+  }
+  
+  .contact-page {
+    padding: 4rem 0;
+  }
+  
+  .contact-page .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+  }
+  
+  .contact-page .section-sub {
+    text-align: center;
+    color: #555;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+  }
+  
+  /* Two‐column layout: form on left, info on right */
+  .contact-container {
+    display: grid;
+    grid-template-columns: 2.5fr 2fr;
+    gap: 1 rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+  }
+  
+  /* Make the form fill its column */
+  .contact-form {
+    width: 100%;
+    padding: 0rem 1rem;
+  }
+  
+  /* Style inputs full width */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Adjust the button width */
+  .contact-form button {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto 0 auto;
+    display: block;
+  }
+
+  /* Ensure ContactInfo spans its column */
+  .contact-info {
+    width: 100%;
+  }
+  
+  /* Responsive: stack columns */
+  @media (max-width: 768px) {
+    .contact-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .contact-container > * {
+      width: 100%;
+    }
+    .contact-page .section-sub {
+      padding: 0 1rem;
+    }
+  }
+  

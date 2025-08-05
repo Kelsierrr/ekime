@@ -1,0 +1,144 @@
+:root {
+    --navy-blue: #003865;
+    --lime-green: #C2D72D;
+    --white: #ffffff;
+    --dark-gray: #333333;
+    --transition: 0.3s ease;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+  
+  .about-page {
+    padding: 6rem 0 4rem;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--navy-blue);
+  }
+  
+  .about-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: var(--dark-gray);
+  }
+  
+  .about-image {
+    flex: 1;
+  }
+  
+  .rounded-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+  }
+  
+  .team-section {
+    margin-top: 4rem;
+  }
+  
+  .team-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: var(--navy-blue);
+  }
+  
+  .founder-spotlight {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .founder-card {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    background-color: var(--white);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    max-width: 800px;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  
+  .founder-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  .founder-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .founder-info {
+    flex: 1;
+  }
+  
+  .founder-info h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--navy-blue);
+  }
+  
+  .founder-title {
+    font-size: 1.1rem;
+    color: var(--lime-green);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .founder-description {
+    color: var(--dark-gray);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .founder-contact p {
+    margin-bottom: 0.5rem;
+    color: var(--dark-gray);
+  }
+  
+  .founder-contact strong {
+    color: var(--navy-blue);
+  }
+  
+  @media (max-width: 768px) {
+    .about-page {
+      padding: 4rem 0 2rem;
+    }
+  
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .founder-card {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+    }
+  
+    .founder-image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  

@@ -49,7 +49,10 @@
   .nav {
     display: flex;
     gap: 1rem;
+   
   }
+  
+  
   .nav-list {
     display: flex;
     list-style: none;
@@ -96,8 +99,13 @@
   .backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0);
     z-index: 900;
+    pointer-events: auto;
+    transition: background .35s ease;
+  }
+  .header .backdrop-active {
+    background: rgba(0,0,0,0.25);
   }
   
   /* Mobile */
@@ -123,6 +131,7 @@
     .nav.open {
       right: 0;
     }
+    
     .nav-list {
       flex-direction: column;
     }

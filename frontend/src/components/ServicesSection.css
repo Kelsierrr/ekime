@@ -1,40 +1,66 @@
 .services-section {
-    padding: 4rem 0;
-  }
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 0.25rem;
-    color: var(--color-navy);
-  }
-  .section-sub {
-    margin-bottom: 1.75rem;
-    color: #555;
-  }
+  padding: 4rem 0;
+}
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  color: var(--navy-blue);
+}
+.section-sub {
+  margin-bottom: 1.75rem;
+  color: #555;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.service-card1 {
+  flex: 1 1 300px;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.05);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+}
+.image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+}
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.card-content {
+  padding: 1.25rem 1rem 1.5rem;
+}
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: var(--navy-blue);
+}
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #444;
+}
+
+/* Responsive stacking */
+@media (max-width: 900px) {
   .cards {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 4.5rem;
   }
-  .service-card {
-    flex: 1 1 280px;
-    background: #fff;
-    border: 1px solid #e6e6e6;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-    transition: transform var(--transition), box-shadow var(--transition);
-  }
-  .service-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
-  }
-  .service-card h3 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  .service-card p {
-    font-size: 0.95rem;
-    line-height: 1.4;
-    color: #444;
-  }
-  
+}

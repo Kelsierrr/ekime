@@ -1,9 +1,9 @@
 .contact-info {
-    display: grid;
-    gap: 1rem;
-    padding: 1.5rem;
+  display: grid;
+  gap: 1.2rem;
+    padding-left: 1.5rem;
     border-radius: 10px;
-    margin-bottom: 1.5rem;
+   
   }
   .info-item {
     display: flex;
@@ -42,5 +42,11 @@
   }
   a:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 768px){
+    .contact-info{
+      padding-left: 0.5rem;
+    }
   }
   
