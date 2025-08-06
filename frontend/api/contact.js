@@ -64,7 +64,7 @@ ${message}
 
     await transporter.sendMail({
       from: `"Ekime Website" <${user}>`,
-      to: 'info@ekime.com.ng',
+      to: 'barryalxen13@gmail.com',
       subject: `New contact from ${name}`,
       text: mailText,
     });
