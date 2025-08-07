@@ -22,7 +22,7 @@ export default function BlogPost() {
   return (
     <>
       <Header />
-      <article className="blog-post container">
+      <article className="blog-post ">
         <h1>{post.title}</h1>
         <p className="date">{new Date(post.publishedAt).toLocaleDateString()}</p>
         <img

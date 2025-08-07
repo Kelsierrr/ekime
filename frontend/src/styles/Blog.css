@@ -1,5 +1,6 @@
 .blog-page {
     padding: 4rem 0;
+   
   }
   .blog-page h1 {
     text-align: center;
@@ -10,6 +11,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
+    margin: 3rem;
   }
   .blog-card {
     background: #fff;
@@ -34,10 +36,31 @@
   .blog-card .excerpt {
     margin: 0 1rem 1rem;
     color: #555;
+    
   }
   .blog-card .date {
     margin: 0 1rem 1rem;
     font-size: 0.85rem;
     color: #999;
   }
-  
+  /* Prevent default link underlines */
+.blog-card  {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* ensure full-card clickable */
+}
+
+/* On hover, underline only the title */
+.blog-card:hover h2 {
+  text-decoration: underline;
+}
+
+/* Explicitly remove underline from excerpt and date */
+.blog-card:hover .excerpt,
+.blog-card:hover .date {
+  text-decoration: none;
+}
+.blog-card a,
+.blog-card a:hover {
+  text-decoration: none;
+}

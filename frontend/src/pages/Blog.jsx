@@ -19,7 +19,7 @@ export default function Blog() {
   return (
     <>
       <Header />
-      <main className="blog-page container">
+      <main className="blog-page">
         <h1>Blog</h1>
         <div className="blog-grid">
           {posts.map(p => (

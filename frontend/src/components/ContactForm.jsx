@@ -1,10 +1,16 @@
 // src/components/ContactForm.jsx
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', message: '', hp: '' });
   const [status, setStatus] = useState(''); // '', 'sending', 'sent', 'error'
-
+  useEffect(() => {
+      if (status === 'sent' || status === 'error') {
+        const timer = setTimeout(() => setStatus(''), 3000);
+        return () => clearTimeout(timer);
+      }
+    }, [status]);
+  
   const handleChange = (e) => {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
   };
