@@ -7,8 +7,8 @@ const socialLinks = {
   facebook: 'https://www.facebook.com/EkimeBA?mibextid=ZbWKwL',
   linkedin: 'https://www.linkedin.com/in/felix-ujor-7aa035247',
   whatsapp: 'https://wa.me/2349124271058',
-  instagram: '#', // replace when ready
-  youtube: '#', // replace when ready
+  instagram: 'https://www.instagram.com/ekimeba/', 
+  youtube: 'https://www.youtube.com/@ekimeBA', 
 };
 
 export default function ContactInfo() {

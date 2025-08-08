@@ -5,7 +5,7 @@ import Home from './pages/Home.jsx';
  import Services from './pages/Services.jsx';
 import Blog from './pages/Blog.jsx';
 import BlogPost from './pages/BlogPost.jsx'
-// import Portfolio from './pages/Portfolio.jsx';
+import Portfolio from './pages/Portfolio.jsx';
 import Contact from './pages/Contact.jsx';
 
 export default function Router() {
@@ -17,7 +17,7 @@ export default function Router() {
         <Route path="/services" element={<Services />} />
          <Route path="/blog" element={<Blog />} />
          <Route path="/blog/:slug" element={<BlogPost />} />
-        {/* <Route path="/portfolio" element={<Portfolio />} />  */}
+        <Route path="/portfolio" element={<Portfolio />} /> 
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

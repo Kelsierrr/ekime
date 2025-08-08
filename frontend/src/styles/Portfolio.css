@@ -1,0 +1,67 @@
+.portfolio-page {
+    padding: 4rem 0;
+    margin: 2rem;
+  }
+  .portfolio-page h1 {
+    text-align: center;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+  .portfolio-page .subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  .portfolio-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform var(--transition);
+  }
+  .portfolio-card:hover {
+    transform: translateY(-4px);
+  }
+  .portfolio-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .card-content {
+    padding: 1rem;
+  }
+  .card-content h2 {
+    margin: 0 0 0.5rem;
+    color: var(--navy);
+    font-size: 1.2rem;
+  }
+  .card-content .desc {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.4;
+  }
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  /* Ensure only the title underlines on hover */
+.portfolio-card .card-link,
+.portfolio-card .card-link:hover {
+  text-decoration: none;
+}
+
+.portfolio-card .card-link:hover h2 {
+  text-decoration: underline;
+}
+
+.portfolio-card .card-link:hover .desc {
+  text-decoration: none;
+}
+
+  

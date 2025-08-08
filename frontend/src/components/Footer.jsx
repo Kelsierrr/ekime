@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaLinkedinIn, FaWhatsapp, FaYoutube, FaInstagram, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn, FaWhatsapp, FaYoutube, FaInstagram, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import './Footer.css';
 
 export default function Footer() {
@@ -44,7 +44,7 @@ export default function Footer() {
                 <span>+234 912 427 1058</span>
               </li>
               <li>
-                <FaInstagram style={{ marginRight: '1px' }} />
+                <FaEnvelope style={{ marginRight: '1px' }} />
                 <span>info@ekime.com.ng</span>
               </li>
               <li>

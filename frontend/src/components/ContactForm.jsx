@@ -1,6 +1,7 @@
 // src/components/ContactForm.jsx
 import { useState, useEffect } from 'react';
 
+
 export default function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', message: '', hp: '' });
   const [status, setStatus] = useState(''); // '', 'sending', 'sent', 'error'
@@ -90,6 +91,7 @@ export default function ContactForm() {
         {status === 'sending' ? 'Sending...' : 'Send Message'}
       </button>
       {status === 'sent' && <p style={{ color: 'green' }}>Message sent! Thank you.</p>}
+      {status === 'sending' && <p style={{ color: 'blue' }}>Your message will be sent within 30 seconds, please wait...</p>}
       {status === 'error' && <p style={{ color: 'red' }}>Something went wrong. Try again.</p>}
     </form>
   );
