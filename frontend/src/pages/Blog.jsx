@@ -4,7 +4,10 @@ import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import WhatsAppWidget from '../components/WhatsAppWidget.jsx'
 import { client, urlFor } from '../sanityClient'
+import DocumentHead from '../components/DocumentHead.jsx'
 import '../styles/Blog.css'
+
+const SITE = import.meta.env.VITE_SITE_URL || 'http://localhost:3000'
 
 export default function Blog() {
   const [posts, setPosts] = useState([])
@@ -18,6 +21,11 @@ export default function Blog() {
 
   return (
     <>
+      <DocumentHead
+        title="Ekime Digital Services — Blog"
+        description="Insights, tips, and updates from Ekime Digital Services. Explore our latest articles on web development, digital marketing, and more."
+        url={`${SITE}/blog`}
+      />
       <Header />
       <main className="blog-page">
         <h1>Blog</h1>

@@ -4,11 +4,18 @@ import Footer from '../components/Footer.jsx';
 import ContactForm from '../components/ContactForm.jsx';
 import ContactInfo from '../components/ContactInfo.jsx';
 import WhatsAppWidget from '../components/WhatsAppWidget.jsx';
+import DocumentHead from '../components/DocumentHead.jsx';
 import '../styles/Contact.css';
 
+const SITE = import.meta.env.VITE_SITE_URL || 'http://localhost:3000';
 export default function Contact() {
   return (
     <>
+      <DocumentHead
+        title="Ekime Digital Services — Contact Us"
+        description="Get in touch with Ekime Digital Services for web development, app development, copywriting, and digital marketing services."
+        url={`${SITE}/contact`}
+      />
       <Header />
       <main className="contact-page">
         <h1 className="section-title">Contact Us</h1>

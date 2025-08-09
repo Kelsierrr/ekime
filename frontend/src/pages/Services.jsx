@@ -3,7 +3,12 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import WhatsAppWidget from '../components/WhatsAppWidget.jsx';
+import DocumentHead from '../components/DocumentHead.jsx';
+import AdSlot from '../components/AdSlot.jsx';
 import '../styles/Services.css';
+
+
+const SITE = import.meta.env.VITE_SITE_URL || 'http://localhost:3000';
 
 export default function Services() {
   const services = [
@@ -51,6 +56,12 @@ export default function Services() {
 
   return (
     <>
+      <DocumentHead
+        title="Ekime Digital Services — Our Services"
+        description="Explore our range of digital services designed to help your business thrive online."
+        url={`${SITE}/services`}
+        image={`${SITE}/og/Copywriting-service.jpg`} // absolute URL
+      />
       <Header />
       <main className="services-page">
         <div className="container">
@@ -75,6 +86,7 @@ export default function Services() {
               </div>
             ))}
           </div>
+          <AdSlot client="ca-pub-9731823684789613" slot="1542582657" test={false} />
 
           <section className="process-section">
             <h2 className="section-title">Our Process</h2>

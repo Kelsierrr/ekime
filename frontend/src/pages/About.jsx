@@ -2,11 +2,20 @@ import React from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import WhatsAppWidget from '../components/WhatsAppWidget.jsx';
+import DocumentHead from '../components/DocumentHead.jsx';
+import AdSlot from '../components/AdSlot.jsx';
 import '../styles/About.css';
 
+const SITE = import.meta.env.VITE_SITE_URL || 'http://localhost:3000';
 export default function About() {
   return (
     <>
+      <DocumentHead
+        title="Ekime Digital Services — About Us"
+        description="Learn more about Ekime Digital Services, our mission, and the team behind our success."
+        url={`${SITE}/about`}
+        image={`${SITE}/og/about-image.jpg`} // absolute URL
+      />
       <Header />
       <main className="about-page">
         <div className="container">
@@ -44,6 +53,7 @@ export default function About() {
               />
             </div>
           </div>
+          <AdSlot client="ca-pub-9731823684789613" slot="1542582657" test={false} />
 
           {/* Team Section */}
           <div className="team-section">

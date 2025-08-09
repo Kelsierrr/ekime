@@ -6,7 +6,7 @@ import './ContactInfo.css';
 const socialLinks = {
   facebook: 'https://www.facebook.com/EkimeBA?mibextid=ZbWKwL',
   linkedin: 'https://www.linkedin.com/in/felix-ujor-7aa035247',
-  whatsapp: 'https://wa.me/2349124271058',
+  whatsapp: 'https://wa.me/2348052054490',
   instagram: 'https://www.instagram.com/ekimeba/', 
   youtube: 'https://www.youtube.com/@ekimeBA', 
 };

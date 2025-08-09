@@ -4,8 +4,10 @@ import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import WhatsAppWidget from '../components/WhatsAppWidget.jsx'
 import { client, urlFor } from '../sanityClient'
+import DocumentHead from '../components/DocumentHead.jsx'
 import '../styles/Portfolio.css'
 
+const SITE = import.meta.env.VITE_SITE_URL || 'http://localhost:3000'
 export default function Portfolio() {
   const [items, setItems] = useState([])
 
@@ -18,6 +20,11 @@ export default function Portfolio() {
 
   return (
     <>
+      <DocumentHead
+        title="Ekime Digital Services — Portfolio"
+        description="Explore our portfolio of web and app development projects. Click any card to view the live site."
+        url={`${SITE}/portfolio`}
+      />
       <Header />
       <main className="portfolio-page">
         <h1>Portfolio</h1>

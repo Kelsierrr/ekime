@@ -6,7 +6,7 @@ import './WhatsAppWidget.css';
 export default function WhatsAppWidget() {
   return (
     <a
-      href="https://wa.me/2349124271058"
+      href="https://wa.me/2348052054490"
       className="whatsapp-widget"
       target="_blank"
       rel="noopener noreferrer"

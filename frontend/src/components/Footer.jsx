@@ -41,7 +41,7 @@ export default function Footer() {
             <ul className="contact-info">
               <li>
                 <FaWhatsapp style={{ marginRight: '1px' }} />
-                <span>+234 912 427 1058</span>
+                <span>+234 805 205 4490</span>
               </li>
               <li>
                 <FaEnvelope style={{ marginRight: '1px' }} />
