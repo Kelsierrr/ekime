@@ -12,6 +12,7 @@
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
     margin: 3rem;
+  
   }
   .blog-card {
     background: #fff;

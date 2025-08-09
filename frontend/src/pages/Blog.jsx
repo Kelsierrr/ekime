@@ -21,7 +21,7 @@ export default function Blog() {
       <Header />
       <main className="blog-page">
         <h1>Blog</h1>
-        <div className="blog-grid">
+        <div className="blog-grid container">
           {posts.map(p => (
             <article key={p._id} className="blog-card">
               <Link to={`/blog/${p.slug.current}`}>

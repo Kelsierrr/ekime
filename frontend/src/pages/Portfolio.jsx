@@ -25,7 +25,7 @@ export default function Portfolio() {
           A showcase of our recent projects—click any card to view the live site.
         </p>
 
-        <div className="portfolio-grid">
+        <div className="portfolio-grid container">
           {items.map(item => (
             <article key={item._id} className="portfolio-card">
               <a
