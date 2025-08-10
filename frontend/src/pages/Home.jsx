@@ -34,9 +34,9 @@ export default function Home() {
           <div className="container">
             <h2>Have a project in mind?</h2>
             <p>Let’s build something great together. Reach out and we’ll get back to you quickly.</p>
-            <a href="/contact" className="btn" style={{ marginTop: '0.5rem' }}>
+            <Link to ="/contact" className="btn" style={{ marginTop: '0.5rem' }}>
               Contact Us
-            </a>
+            </Link>
           </div>
         </section>
       </main>

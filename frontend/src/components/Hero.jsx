@@ -1,6 +1,7 @@
 // src/components/Hero.jsx
 import React from 'react';
 import './Hero.css';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -13,9 +14,9 @@ export default function Hero() {
             strategies that help brands grow online.
           </p>
           <div className="hero-cta">
-            <a href="/services" className="btn">
+            <Link to="/services" className="btn">
               View Our Services
-            </a>
+              </Link>
           </div>
         </div>
         <div className="hero-visual">
