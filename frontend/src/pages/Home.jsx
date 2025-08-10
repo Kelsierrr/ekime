@@ -8,6 +8,7 @@ import AboutSection from '../components/AboutSection.jsx';
 import WhatsAppWidget from '../components/WhatsAppWidget.jsx';
 import DocumentHead from '../components/DocumentHead.jsx';
 import AdSlot from '../components/AdSlot.jsx';
+import { Link } from 'react-router-dom';
 
 const SITE = import.meta.env.VITE_SITE_URL || 'http://localhost:3000';
 

@@ -16,7 +16,7 @@ export default function Hero() {
           <div className="hero-cta">
             <Link to="/services" className="btn">
               View Our Services
-              </Link>
+              </Link> 
           </div>
         </div>
         <div className="hero-visual">
